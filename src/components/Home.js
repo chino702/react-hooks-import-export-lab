@@ -1,4 +1,6 @@
 import React from "react";
+import { username, city, image } from "../data/user";
+
 
 function Home() {
   return (
@@ -6,6 +8,9 @@ function Home() {
       <h1>
         {username} is a Web Developer from {city}
       </h1>
+      <img src={image} alt="User" />
     </div>
   );
 }
+
+export default Home;
